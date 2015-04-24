@@ -98,7 +98,7 @@ class Coche extends Vehiculo{
 	 * @param diesel
 	 * @param descapotable
 	 */
-	public Coche( String propietario, int numeroPasajeros,
+	public Coche(String propietario, int numeroPasajeros,
 			boolean diesel, boolean descapotable) {
 		super(2, propietario, numeroPasajeros);
 		this.diesel = diesel;
@@ -129,5 +129,6 @@ class Motocicleta extends Vehiculo{
 			int numeroPasajeros, int cilindrada) {
 		super(2, propietario, numeroPasajeros);
 		this.cilindrada = cilindrada;
-	}	
+	}
+	
 }
