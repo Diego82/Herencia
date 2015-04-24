@@ -10,16 +10,29 @@ public class ListinProfesores {
 	//Costructor
 	public ListinProfesores(){
 		this.lista = new ArrayList<Profesor>();
+		
+	}
+	
+	/**
+	 * @return the lista
+	 */
+	public List<Profesor> getLista() {
+		return lista;
+	}
+
+	/**
+	 * @param lista the lista to set
+	 */
+	public void setLista(List<Profesor> lista) {
+		this.lista = lista;
 	}
 	
 	public void addProfesor(Profesor p){
-		if(!p.equals(lista))
-			lista.add(p);
+		lista.add(p);
 	}
 	
 	public void deleteProfesor(Profesor p){
-		if(lista.contains(p))
-			lista.remove(p);
+		lista.remove(p);
 	}
 
 	/* (non-Javadoc)

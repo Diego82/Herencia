@@ -4,7 +4,7 @@ public class PruebaInformaticos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Analista a = new Analista("Grupo Heineken", "contable");
+		Analista a = new Analista("Grupo Heineken", "Base de Datos");
 		Analista b = new Analista("Grupo Heineken", "administrador");
 		Programador c = new Programador("Software SOL", "Java");
 		Programador d = new Programador("Ofimatica", "Java");

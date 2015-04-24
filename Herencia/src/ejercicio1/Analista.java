@@ -21,7 +21,7 @@ public class Analista extends InformaticosAbs{
 	 */
 	@Override
 	public String toString() {
-		return " Informatico: "+ super.toString()+
+		return " Analista: "+ super.toString()+
 				" especialidad del analista: "+especialidad;
 	}
 	

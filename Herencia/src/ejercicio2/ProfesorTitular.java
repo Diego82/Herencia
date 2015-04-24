@@ -7,7 +7,6 @@ public class ProfesorTitular extends Profesor {
 
 	/**
 	 * @param nombre
-	 * @param apellidos
 	 * @param dni
 	 * @param edad
 	 * @param centroImparte
@@ -15,25 +14,11 @@ public class ProfesorTitular extends Profesor {
 	 * @param departamento
 	 * @param antiguedad
 	 */
-	public ProfesorTitular(String nombre, String apellidos, String dni,
+	public ProfesorTitular(String nombre, String dni,
 			int edad, String centroImparte, String asignatura,
 			String departamento, int antiguedad) {
-		super(nombre, apellidos, dni, edad, centroImparte, asignatura,
+		super(nombre, dni, edad, centroImparte, asignatura,
 				departamento);
-		this.antiguedad = antiguedad;
-	}
-
-	/**
-	 * @return the antiguedad
-	 */
-	public int getAntiguedad() {
-		return antiguedad;
-	}
-
-	/**
-	 * @param antiguedad the antiguedad to set
-	 */
-	public void setAntiguedad(int antiguedad) {
 		this.antiguedad = antiguedad;
 	}
 
@@ -42,7 +27,8 @@ public class ProfesorTitular extends Profesor {
 	 */
 	@Override
 	public String toString() {
-		return "ProfesorTitular antiguedad=" + antiguedad + ", tostring desde profesor titular:"
+		return "ProfesorTitular antiguedad=" + antiguedad + " "
 				+ super.toString();
 	}
+	
 }

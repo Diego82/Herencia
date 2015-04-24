@@ -10,7 +10,7 @@ public class TestVideojuego {
 		System.out.println(b);
 		System.out.println(b.encantar());
 		System.out.println(a.combatir(20));
-		a.setEnergia(100);
+		a.alimentarse(100);
 		System.out.println(a);
 	
 		

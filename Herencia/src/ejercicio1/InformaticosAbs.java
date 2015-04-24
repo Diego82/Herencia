@@ -44,7 +44,7 @@ public class InformaticosAbs {
 	 */
 	@Override
 	public String toString() {
-		return " empresa: " + empresa + " Sueldo: "+getSueldo();
+		return " empresa: " + empresa + " Sueldo: "+this.sueldo;
 	}
 	
 	

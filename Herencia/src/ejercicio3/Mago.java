@@ -19,13 +19,15 @@ public class Mago extends Personajes{
 	 */
 	@Override
 	public String toString() {
-		return "Mago poder=" + poder + ", nombre=" + nombre + ", nivelEnergia="
-				+ nivelEnergia;
+		return "Nombre: "+nombre+", poder del mago: "+poder+", nivelEnergia: "+ nivelEnergia;
 	}
 
 	public String encantar(){
-		setEnergia(-2);
-		return this.poder;
+		if(nivelEnergia<=2){
+			alimentarse(-2);
+			return this.poder;
+		}
+		return "No tengo energia para usar poderes";
 	}
 	
 }

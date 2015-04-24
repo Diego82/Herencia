@@ -15,8 +15,11 @@ public class Guerrero extends Personajes {
 	}
 	
 	public String combatir(int energiaCombate){
-		setEnergia(-energiaCombate);
-		return this.arma+nivelEnergia;
+		if (energiaCombate<=getNivelEnergia()) {
+			alimentarse(-energiaCombate);
+			return this.arma+"-"+nivelEnergia;
+		}
+		return "No tengo energia para combatir"; 
 	}
 
 	/* (non-Javadoc)
@@ -24,7 +27,7 @@ public class Guerrero extends Personajes {
 	 */
 	@Override
 	public String toString() {
-		return "Guerrero arma=" + arma + ", toString()=" + super.toString();
+		return "Nombre del guerrero: "+nombre+", arma: "+arma+", nivel de Energia"+nivelEnergia;
 	}
 	
 }

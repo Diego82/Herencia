@@ -12,22 +12,22 @@ public class Personajes {
 		this.nivelEnergia = nivelEnergia;
 	}
 	
-	public void setEnergia(int alimento){
+	public void alimentarse(int alimento){
 		this.nivelEnergia+=alimento;
 	}
 
 	/**
-	 * @param nombre the nombre to set
+	 * @return the nombre
 	 */
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public String getNombre() {
+		return nombre;
 	}
 
 	/**
-	 * @param nivelEnergia the nivelEnergia to set
+	 * @return the nivelEnergia
 	 */
-	public void setNivelEnergia(int nivelEnergia) {
-		this.nivelEnergia = nivelEnergia;
+	public int getNivelEnergia() {
+		return nivelEnergia;
 	}
 
 	/* (non-Javadoc)
