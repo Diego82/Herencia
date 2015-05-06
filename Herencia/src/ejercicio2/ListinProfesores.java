@@ -10,7 +10,6 @@ public class ListinProfesores {
 	//Costructor
 	public ListinProfesores(){
 		this.lista = new ArrayList<Profesor>();
-		
 	}
 	
 	/**
